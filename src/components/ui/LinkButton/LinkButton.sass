@@ -1,0 +1,37 @@
+@import ../../../styles/_variables
+@import '../../../styles/_mixins'
+
+.button
+  width: 7.1875rem
+  height: 2rem
+
+  font-size: .875rem
+  font-weight: 500
+  line-height: 1rem
+
+  padding: .5625rem .6875rem
+
+  border-radius: $sz_border_radius_button
+
+  display: flex
+  align-items: center
+  justify-content: center
+  gap: .5rem
+
+.email
+  color: $clr_button_text
+  background-color: $clr_button_bg
+  @include transition(all .2s ease-in-out)
+
+.email:hover
+  color: $clr_button_bg
+  background-color: $clr_button_text
+
+.linkedin
+  color: $clr_button_bg
+  background-color: $clr_button_accent
+  @include transition(all .2s ease-in-out)
+
+.linkedin:hover
+  color: $clr_button_accent
+  background-color: $clr_button_bg
